@@ -1,3 +1,24 @@
+def afficher(p):
+    terms = []
+    degree = len(p) - 1
+    for i, coeff in enumerate(reversed(p)):
+        if coeff != 0:
+            exponent = degree - i
+            if exponent == 0:
+                terms.append(f"{coeff}")
+            elif exponent == 1:
+                terms.append(f"{coeff}x")
+            else:
+                terms.append(f"{coeff}x^{exponent}")
+    print(" + ".join(terms))
+def get_valeur(p, x):
+    result = 0
+    for i, coeff in enumerate(p):
+        result += coeff * (x ** i)
+    return result
+def deriver(p):
+    derived = [(i * coeff) for i, coeff in enumerate(p) if i > 0]
+    return derived
 # Polynôme exemple : p(x) = 0.1x^4 + 0.1x^3 - 1.3x^2 - 0.1x + 1.2
 p = [1.2, -0.1, -1.3, 0.1, 0.1]
 
