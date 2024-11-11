@@ -54,5 +54,6 @@ p_deriv = p.deriver()
 print("\nPolynôme dérivé :")
 print("Ghiles")
 p_deriv.afficher()
+print(3)
 
 
