@@ -49,8 +49,9 @@ p.afficher()
 x = 2
 valeur = p.get_valeur(x)
 print(f"\nValeur de p({x}) = {valeur}")
-
 # Calculer et afficher le polynôme dérivé
 p_deriv = p.deriver()
 print("\nPolynôme dérivé :")
+print("Ghiles")
 p_deriv.afficher()
+print("Ghiles")
