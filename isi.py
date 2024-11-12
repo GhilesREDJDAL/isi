@@ -52,6 +52,7 @@ print(f"\nValeur de p({x}) = {valeur}")
 # Calculer et afficher le polynôme dérivé
 p_deriv = p.deriver()
 print("\nPolynôme dérivé :")
+print("\nPolynôme dérivé :")
 
 
 
